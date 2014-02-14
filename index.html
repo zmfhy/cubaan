@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/fhy.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.min.css" /> 
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+</head>
+
+<body>
+<!--Ini halaman utama -->
+<div data-role="page" id="p1"
+<div data-role="page" data-position="fixed">
+	<div data-role="header">
+		<h3>UTAMA</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<!--ini grid -->
+	<div class="ui-grid-a ui-responsive">
+		<!-- row pertama-->
+		<div class="ui-block-a">
+			<img src="gambar/1.jpg" width="250"/>
+		</div>
+		<div class="ui-block-b">
+			<h3>Muka Depan</h3>
+			<p>
+			Saya sedang mengikuti kursus Mobile Learning
+			di Bilik Majlis, UKM
+			pada 7 - 8 Febuari 2014
+			</p>
+		</div>
+		<div class="ui-block-a">
+			<h3>Muka Depan</h3>
+			<p>
+			Saya sedang mengikuti kursus Mobile Learning
+			di Bilik Majlis, UKM
+			pada 7 - 8 Febuari 2014
+			</p>
+		</div>
+		<div class="ui-block-b">
+			<img src="gambar/2.jpg" width="250"/>
+		</div>
+	</div>
+	<a href="#p2" class="ui-btn" data transition="turn">Ke Page 2 </a>
+</div>
+<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid" class="ui-btn-active
+				ui-state-persist">Utama</a></li>
+                <li><a href="#p2" data-icon="star">Isi</a></li>
+				<li><a href="#p3" data-icon="gear">Hubungi</a></li>
+                
+            </ul>
+        </div>
+</div>
+</div>
+<!-- INI PAGE KEDUA -->
+<div data-role="page" id="p2">
+<div data-role="panel" data-display="overlay" id="panel1">
+	<h3>Kandungan</h3>
+	<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+		<h4>Pantulan Cahaya</h4>
+		<ul data-role="listview" data-inset="false">
+			<li><a href="bab1sub1.html" data-transition="pop">Pengenalan</a></li>
+			<li>Peraturan</li>
+			<li>Kedudukan</li>
+		</ul>
+	</div>
+
+</div>
+	<div data-role="header"data-position="fixed">
+		<a href="#panel1" data-icon="bars" data-iconpos="notext">Panel</a>
+		<h3>Cahaya<h3>
+	</div>
+	<div role="main" class="ui-content">
+		<h3>Sifat Cahaya<h3>
+		<ul data-role="listview" data-inset="true">
+				<li> Point1</li>
+				<li> Point2</li>
+		
+		</ul>
+		<p> Ini Isi</p>
+		<a href="#p1" class="ui-btn" data-transition="turn"
+		data-direction="reverse">Ke Page 1</a>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#p1" data-icon="grid">Utama</a></li>
+                <li><a data-icon="star" class="ui-btn-active ui-state-persist">Isi</a></li>
+				<li><a href="#p3" data-icon="gear">Hubungi</a></li>
+                
+            </ul>
+        </div>
+	</div>
+</div>
+</div>
+
+<!-- Ini ms ketiga -->
+<div data-role="page" id="p3">
+	<div data-role="header">
+		<h3>Support</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<!--popup utk FHY -->
+		<div data-role="popup" id="d1">
+			<a href="tel:+60133458258" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-notext ui-corner-all">Telefon</a>
+			<a href="sms://+60133458258" class="ui-btn ui-btn-inline ui-icon-edit ui-btn-icon-notext ui-corner-all">SMS</a>
+			<a href="mailto:fhyzul@yahoo.com" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-notext ui-corner-all">Email</a>
+		</div>
+		<!--popup utk HAFIZA -->
+		<div data-role="popup" id="d2">
+			<a href="tel:+60193898114" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-notext ui-corner-all">Telefon</a>
+			<a href="sms://+60193898114" class="ui-btn ui-btn-inline ui-icon-edit ui-btn-icon-notext ui-corner-all">SMS</a>
+			<a href="mailto: hafiza.abas@gmail.com" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-notext ui-corner-all">Email</a>
+		</div>
+		<!--Senaraikan pensyarah-->
+		<h3>Pengarang</h3>
+		<ul data-role="listview" data-inset="true">
+			<li>
+				<a href="#d1" data-rel="popup" data transition+"slideup">
+					<img src="gambar/My Pic.jpg" width="150" />
+					<h3>Dr. Faridah Hanim Yahya </h3>
+					<p>IPGKampus Pendidikan Teknik</p>
+				</a>
+			</li>
+			<li>
+				<a href="#d2" data-rel="popup" data transition+"slideup">
+					<img src="gambar/Fz.jpg" width="150" />
+					<h3>Hafiza Abas</h3>
+					<p>UTM, KL</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#p1" data-icon="grid">Utama</a></li>
+                <li><a href="#p2" data-icon="star">Isi</a></li>
+				<li><a data-icon="gear" class="ui-btn-active
+				ui-state-persist">Hubungi</a></li>
+                
+            </ul>
+        </div>
+
+	</div>
+</div>
+</body>
+</html>
+</body>
+
+</html>
+
